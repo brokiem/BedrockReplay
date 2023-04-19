@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: BedrockReplay
-          path: target/BedrockReplay-SNAPSHOT.jar
+          path: target/BedrockReplay-1.0.0-SNAPSHOT.jar

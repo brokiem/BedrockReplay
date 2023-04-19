@@ -12,7 +12,7 @@ BedrockReplay is a replay system for Minecraft: Bedrock Edition that allows play
 - Share replays with friends and the Minecraft community
 
 ## Installation
-1. Download Azul Zulu OpenJDK 11 for your operating system from [here](https://www.azul.com/downloads/zulu-community/?version=java-17-lts&package=jdk)
+1. Download Azul Zulu OpenJDK 17 for your operating system from [here](https://www.azul.com/downloads/zulu-community/?version=java-17-lts&package=jdk)
 2. Download the artifact from the [actions page](https://github.com/brokiem/BedrockReplay/actions)
 3. Extract the artifact to a directory
 4. Double-click the BedrockReplay-SNAPSHOT.jar file to start the server

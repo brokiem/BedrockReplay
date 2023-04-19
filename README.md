@@ -18,7 +18,7 @@ BedrockReplay is a replay system for Minecraft: Bedrock Edition that allows play
 4. Double-click the BedrockReplay-SNAPSHOT.jar file to start the server
 
 ## Usage
-1. Start BedrockReplay server by Double-clicking the BedrockReplay-SNAPSHOT.jar
+1. Start BedrockReplay server by double-clicking the BedrockReplay-SNAPSHOT.jar
 2. Set the `address` and `port` in the `config.json` file located in the BedrockReplay directory
 3. Join the proxy using Minecraft: Bedrock Edition
 4. Type `!replay record <replayName>` in the chat to start recording
@@ -28,16 +28,16 @@ BedrockReplay is a replay system for Minecraft: Bedrock Edition that allows play
 8. Check the available commands by typing `!` in the chat
 
 ## FAQ
-**Q: Can I use BedrockReplay on Minecraft: Java Edition?**
+**Q: Can I use BedrockReplay on Minecraft: Java Edition?**<br>
 A: No, BedrockReplay is designed specifically for Minecraft: Bedrock Edition. However, you can export replays to Minecraft: Java Edition viewer for viewing (SOON).
 
-**Q: How do I customize the replay settings?**
+**Q: How do I customize the replay settings?**<br>
 A: Cooming soon
 
-**Q: How do I record my singleplayer world?**
+**Q: How do I record my singleplayer world?**<br>
 A: You can use Bedrock Dedicated Server to record your singleplayer world. Just set the `address` and `port` in the `config.json` file located in the BedrockReplay directory to the address and port of your Bedrock Dedicated Server.
 
-**Q: Can I share my replays with friends and the Minecraft community?**
+**Q: Can I share my replays with friends and the Minecraft community?**<br>
 A: Yes, you can share your replay files with others. Just paste the replay file in the `replays` directory located in the BedrockReplay directory.
 
 ## License

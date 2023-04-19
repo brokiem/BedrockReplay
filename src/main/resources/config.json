@@ -3,6 +3,10 @@
     "hostname": "0.0.0.0",
     "port": 19132
   },
+  "viewer": {
+    "hostname": "0.0.0.0",
+    "port": 19133
+  },
   "server": {
     "address": "play.venitymc.com",
     "port": 19132

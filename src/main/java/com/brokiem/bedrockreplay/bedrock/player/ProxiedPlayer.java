@@ -10,6 +10,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.brokiem.bedrockreplay.account.AccountManager;
 import com.brokiem.bedrockreplay.auth.Xbox;
 import com.brokiem.bedrockreplay.bedrock.network.handler.downstream.DownstreamPacketHandler;
+import com.brokiem.bedrockreplay.bedrock.player.cache.PlayerPacketCache;
 import com.brokiem.bedrockreplay.bedrock.server.ProxyServer;
 import com.brokiem.bedrockreplay.utils.FileManager;
 import com.brokiem.bedrockreplay.utils.JwtUtils;
@@ -28,6 +29,7 @@ import org.cloudburstmc.protocol.bedrock.netty.initializer.BedrockClientInitiali
 import org.cloudburstmc.protocol.bedrock.packet.BedrockPacket;
 import org.cloudburstmc.protocol.bedrock.packet.LoginPacket;
 import org.cloudburstmc.protocol.bedrock.packet.RequestNetworkSettingsPacket;
+import org.cloudburstmc.protocol.bedrock.packet.TextPacket;
 import org.cloudburstmc.protocol.bedrock.util.EncryptionUtils;
 
 import java.net.InetSocketAddress;
@@ -64,6 +66,12 @@ public class ProxiedPlayer {
     @Getter
     @Setter
     private JSONObject skinData;
+    @Setter
+    @Getter
+    private long entityRuntimeId;
+
+    @Getter
+    private PlayerPacketCache packetCache = new PlayerPacketCache();
 
     @SneakyThrows
     public ProxiedPlayer(BedrockServerSession session) {
@@ -126,6 +134,17 @@ public class ProxiedPlayer {
         if (this.downstreamSession != null && this.downstreamSession.isConnected()) {
             this.downstreamSession.disconnect(reason);
         }
+    }
+
+    public void sendMessage(String message) {
+        TextPacket pk = new TextPacket();
+        pk.setType(TextPacket.Type.RAW);
+        pk.setPlatformChatId("");
+        pk.setXuid("");
+        pk.setSourceName("");
+        pk.setNeedsTranslation(false);
+        pk.setMessage(message);
+        this.session.sendPacket(pk);
     }
 
     public LoginPacket getLoginPacket() throws Exception {

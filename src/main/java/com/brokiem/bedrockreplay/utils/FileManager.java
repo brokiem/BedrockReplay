@@ -7,7 +7,10 @@ package com.brokiem.bedrockreplay.utils;
 
 import com.brokiem.bedrockreplay.BedrockReplay;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.*;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.zip.GZIPInputStream;
 
@@ -15,6 +18,16 @@ public class FileManager {
 
     public static InputStream getFileResourceAsInputStream(String name) {
         return BedrockReplay.class.getClassLoader().getResourceAsStream(name);
+    }
+
+    public static BufferedImage getFileResourceAsImage(String name) {
+        try {
+            URL resource = BedrockReplay.class.getClassLoader().getResource(name);
+            assert resource != null;
+            return ImageIO.read(resource);
+        } catch (IOException ignored) {
+            return null;
+        }
     }
 
     public static String getFileResourceAsString(String name) {

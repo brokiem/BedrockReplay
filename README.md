@@ -18,8 +18,8 @@ BedrockReplay is a replay system for Minecraft: Bedrock Edition that allows play
 4. Double-click the BedrockReplay-SNAPSHOT.jar file to start the server
 
 ## Usage
-1. Start BedrockReplay server by double-clicking the BedrockReplay-SNAPSHOT.jar
-2. Set the `address` and `port` in the `config.json` file located in the BedrockReplay directory
+1. Set the `address` and `port` in the `config.json` file located in the BedrockReplay directory
+2. Start BedrockReplay server by double-clicking the BedrockReplay-SNAPSHOT.jar
 3. Join the proxy using Minecraft: Bedrock Edition
 4. Type `!replay record <replayName>` in the chat to start recording
 5. Type `!replay stop` in the chat to stop recording

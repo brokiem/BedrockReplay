@@ -2,12 +2,8 @@
 A Minecraft: Bedrock Edition proxy replay system that allows players to record and replay their gameplay.
 However, the project is still in development. If you find any bugs, please report them [here](https://github.com/brokiem/BedrockReplay/issues)
 
-## Description
-BedrockReplay is a replay system for Minecraft: Bedrock Edition that allows players to record and replay their gameplay. With Minecraft: Java Edition viewer support (SOON).
-
 ## Features
 - Record and replay gameplay on Minecraft: Bedrock Edition
-- Export replays to Minecraft: Java Edition viewer (SOON)
 - Customizable replay settings, including playback speed and camera mode
 - Share replays with friends and the Minecraft community
 
@@ -29,10 +25,10 @@ BedrockReplay is a replay system for Minecraft: Bedrock Edition that allows play
 
 ## FAQ
 **Q: Can I use BedrockReplay on Minecraft: Java Edition?**<br>
-A: No, BedrockReplay is designed specifically for Minecraft: Bedrock Edition. However, you can export replays to Minecraft: Java Edition viewer for viewing (SOON).
+A: No, BedrockReplay is designed specifically for Minecraft: Bedrock Edition.
 
 **Q: How do I customize the replay settings?**<br>
-A: Cooming soon
+A: Coming soon
 
 **Q: How do I record my singleplayer world?**<br>
 A: You can use Bedrock Dedicated Server to record your singleplayer world. Just set the `address` and `port` in the `config.json` file located in the BedrockReplay directory to the address and port of your Bedrock Dedicated Server.

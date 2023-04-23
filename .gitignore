@@ -35,3 +35,9 @@ bin/
 build/
 /bin1/
 java/build/**
+
+replays
+replays_old
+.account
+config.json
+dependency-reduced-pom.xml

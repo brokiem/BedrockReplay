@@ -38,6 +38,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           title: BedrockReplay Canary
           prerelease: false
+          automatic_release_tag: canary
           files: |
             LICENSE.txt
             target/BedrockReplay-1.0.0-SNAPSHOT.jar

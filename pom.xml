@@ -8,7 +8,6 @@
 
     <properties>
         <bedrockprotocol.version>3.0.0.Beta1-SNAPSHOT</bedrockprotocol.version>
-        <mcprotocollib.version>1.19.1-SNAPSHOT</mcprotocollib.version>
     </properties>
 
     <repositories>
@@ -28,11 +27,6 @@
             <artifactId>bedrock-connection</artifactId>
             <version>${bedrockprotocol.version}</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.github.steveice10</groupId>
-            <artifactId>mcprotocollib</artifactId>
-            <version>${mcprotocollib.version}</version>
         </dependency>
 
         <dependency>

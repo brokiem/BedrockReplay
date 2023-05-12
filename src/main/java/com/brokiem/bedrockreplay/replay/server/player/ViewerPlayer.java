@@ -6,7 +6,6 @@
 package com.brokiem.bedrockreplay.replay.server.player;
 
 import com.brokiem.bedrockreplay.replay.ReplayManager;
-import com.github.steveice10.mc.protocol.data.game.entity.player.GameMode;
 import lombok.Getter;
 import lombok.Setter;
 import org.cloudburstmc.protocol.bedrock.BedrockServerSession;
@@ -43,6 +42,14 @@ public class ViewerPlayer {
     @Setter
     @Getter
     private SetEntityDataPacket lastSetEntityDataPacket;
+
+    public enum GameMode {
+        SURVIVAL,
+        CREATIVE,
+        ADVENTURE,
+        SPECTATOR,
+        UNKNOWN
+    }
 
     public ViewerPlayer(BedrockServerSession session) {
         this.clonedPlayerId = new Random().nextLong();
